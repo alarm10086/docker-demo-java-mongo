@@ -34,4 +34,9 @@ public class VisitorController {
 
         return String.format("你是来自%s的第%d位访问者。", request.getRemoteAddr(), count);
     }
+
+    @RequestMapping(value = "/hello")
+    public String sayHello() {
+        return "Hello, SpringBoot";
+    }
 }
